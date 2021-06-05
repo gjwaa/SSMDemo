@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gjw.mapper.UserMapper">
+
+    <select id="selectUserInfo" resultType="UserInfo">
+        select * from user
+    </select>
+    <select id="isLogin" resultType="UserInfo" parameterType="UserInfo">
+        select acc,pwd from user where acc=#{acc} and pwd=#{pwd}
+    </select>
+    <select id="checkRegis" resultType="UserInfo" parameterType="String">
+        select acc from user where acc=#{acc}
+    </select>
+    <insert id="regis" parameterType="UserInfo">
+        insert into user values (#{uid},#{acc},#{pwd},#{phone},#{email})
+    </insert>
+    <select id="getUserByLimit" resultType="UserInfo" parameterType="map">
+        select * from user limit #{startIndex},#{pageSize}
+    </select>
+
+
+</mapper>

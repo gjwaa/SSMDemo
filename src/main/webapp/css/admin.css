@@ -1,0 +1,85 @@
+
+input,
+img {
+    vertical-align: middle;
+}
+
+a:hover {
+    color: green;
+}
+
+.loginBtn {
+    margin-top: 20px;
+    background-color: orange;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.intro{
+    position: absolute;
+    padding: 0 20px;
+    /* text-align: center; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    /* position: relative; */
+    color: rgb(116, 116, 241);
+}
+
+.head > a,b{
+    color: rgb(116, 116, 241);
+}
+
+.time{
+    height: 30px;
+    width: 100%;
+    background-color: blue;
+    float: right;
+    text-align: right;
+}
+
+.left{
+    float: left;
+    border: rgb(116, 116, 241) 1px solid;
+    margin: 50px 5px;
+
+    width: 15%;
+    height: 800px;
+
+}
+
+.body{
+    float: left;
+    border: rgb(116, 116, 241) 1px solid;
+    margin: 50px 5px;
+    padding: 0;
+    width: 80%;
+    height: 800px;
+}
+
+.table{
+    margin: 0 15%;
+}
+
+.table > tr > td{
+    width: 1110px;
+}
+
+.page{
+    float: right;
+}
+#addProductDiv{
+    display: none;
+}
+#vipInfo{
+    display: none;
+}
